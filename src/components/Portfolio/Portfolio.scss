@@ -379,69 +379,6 @@
         top: -14px;
         transition: 0.5s;
       }
-      &.slick-prev {
-        left: 0;
-        background: -moz-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-        background: -webkit-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-        background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 );
-        &::before {
-          content: url(/assets/images/icons/slick-arrow-left.png);
-        }
-        @media #{$md-layout} {
-          display: none !important;
-        }
-        @media #{$lg-layout} {
-          display: none !important;
-        }
-        @media #{$laptop-device} {
-          display: none !important;
-        }
-      }
-      &.slick-next {
-        right: 0;
-        background: -moz-linear-gradient(right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-        background: -webkit-linear-gradient(right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-        background: linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 );
-        &::before {
-          content: url(/assets/images/icons/slick-arrow-right.png);
-        }
-        @media #{$md-layout} {
-          display: none !important;
-        }
-        @media #{$lg-layout} {
-          display: none !important;
-        }
-        @media #{$laptop-device} {
-          display: none !important;
-        }
-      }
-
-      &:hover {
-        &.slick-prev {
-          padding-right: 50px;
-
-          @media #{$md-layout} {
-            padding-right: 10px;
-          }
-          @media #{$sm-layout} {
-            padding-right: 10px;
-          }
-        }
-        &.slick-next {
-          padding-left: 50px;
-          @media #{$md-layout} {
-            padding-right: 10px;
-          }
-          @media #{$sm-layout} {
-            padding-right: 10px;
-          }
-        }
-        &::before {
-          opacity: 1;
-        }
-      }
     }
   }
 }

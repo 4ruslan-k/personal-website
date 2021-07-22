@@ -10,7 +10,7 @@ const socialShareIcons = [
 ];
 
 const Footer = () => (
-  <div className="footer-style ptb--30 bg_image bg_image--1" data-black-overlay="6">
+  <div className="footer-style ptb--30" data-black-overlay="6">
     <div className="wrapper plr--50 plr_sm--20">
       <div className="row align-items-center justify-content-between">
         <div className="col-lg-4 col-md-12 col-sm-12 col-12">

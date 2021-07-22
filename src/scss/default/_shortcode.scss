@@ -64,28 +64,6 @@ font-family: 'Poppins', sans-serif;
   '7' #101010
 );
 
-/*===========================
-    Background Image 
-=============================*/
-
-.bg_image {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-@for $i from 1 through 35 {
-  .bg_image--#{$i} {
-    background-image: url(/assets/images/bg/bg-image-#{$i}.jpg) !important;
-  }
-}
-
-@for $i from 1 through 80 {
-  .font--#{$i} {
-    font-size: #{$i}px !important;
-  }
-}
-
 p {
   font-size: 18px;
   line-height: 30px;
