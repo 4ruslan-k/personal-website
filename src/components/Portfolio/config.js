@@ -1,9 +1,9 @@
 export const portfolioSlick = {
-  infinite: true,
+  infinite: false,
   slidesToShow: 3,
   slidesToScroll: 1,
   dots: true,
-  arrows: true,
+  arrows: false,
   responsive: [
     {
       breakpoint: 1200,

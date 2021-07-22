@@ -16,18 +16,22 @@ const Gallery = ({ changeLightBoxStatus, images }) => {
 
   return (
     <div className="row">
-      {images.map((imageProps, i) => (
-        <div
-          role="button"
-          tabIndex={-1}
-          className="col-4 col-md-4 col-lg-3"
-          key={imageProps.image.src}
-          onKeyDown={() => handleClickImage(i)}
-          onClick={() => handleClickImage(i)}
-        >
-          <img src={imageProps.image.src} className="gallery-item" alt="gallery-item" />
-        </div>
-      ))}
+      {images.map((imageProps, i) => {
+        console.log(imageProps);
+        console.log(imageProps.image);
+        return (
+          <div
+            role="button"
+            tabIndex={-1}
+            className="col-4 col-md-4 col-lg-3"
+            key={imageProps.image.src}
+            onKeyDown={() => handleClickImage(i)}
+            onClick={() => handleClickImage(i)}
+          >
+            <img src={imageProps.image.src} className="gallery-item" alt="gallery-item" />
+          </div>
+        );
+      })}
       {isOpen && (
         <Lightbox
           mainSrc={images[photoIndex].image.src}

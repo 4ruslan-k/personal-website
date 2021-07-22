@@ -35,7 +35,7 @@ const Footer = () => (
           <div className="inner text-lg-right text-center mt_md--20 mt_sm--20">
             <div className="text">
               <p>
-                Copyright © 2020
+                Copyright © 2021
                 <br />
                 Ruslan Khametov
               </p>

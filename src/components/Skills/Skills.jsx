@@ -11,12 +11,12 @@ const ServiceList = [
   {
     icon: <FiLayers />,
     title: 'Back-end',
-    description: 'Node JS, ExpressJS, Firebase, Django',
+    description: 'Node JS, ExpressJS, Firebase, Django (basic)',
   },
   {
     icon: <FiDatabase />,
     title: 'Databases',
-    description: 'Firestore, MongoDB. DynamoDB, PostgreSQL',
+    description: 'Firestore, MongoDB. DynamoDB, PostgreSQL, MySQL',
   },
   {
     icon: <FiDownloadCloud />,
@@ -26,7 +26,7 @@ const ServiceList = [
   {
     icon: <FiCode />,
     title: 'Languages',
-    description: 'Javascript, Python',
+    description: 'Javascript, Python (basic), Go (basic)',
   },
   {
     icon: <FiTrendingUp />,

@@ -16,8 +16,10 @@ const FakeDataGeneratorFolder = require.context('../../assets/images/projects/fa
 const getImages = (folder) => {
   const images = [];
   folder.keys().forEach((image) => {
+    // console.log('🚀 ~ file: Portfolio.jsx ~ line 19 ~ folder.keys ~ image', image);
     const img = new Image();
-    const src = folder(image);
+    const src = folder(image).default;
+    console.log('🚀 ~ file: Portfolio.jsx ~ line 22 ~ folder.keys ~ src', src);
     img.src = src;
     images.push({
       image: img,
