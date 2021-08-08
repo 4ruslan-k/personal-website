@@ -16,10 +16,8 @@ const FakeDataGeneratorFolder = require.context('../../assets/images/projects/fa
 const getImages = (folder) => {
   const images = [];
   folder.keys().forEach((image) => {
-    // console.log('🚀 ~ file: Portfolio.jsx ~ line 19 ~ folder.keys ~ image', image);
     const img = new Image();
     const src = folder(image).default;
-    console.log('🚀 ~ file: Portfolio.jsx ~ line 22 ~ folder.keys ~ src', src);
     img.src = src;
     images.push({
       image: img,
@@ -46,7 +44,7 @@ const projects = [
     description: 'Generates mock data to test your app. It helps you generate random data in various ways.',
     technologies: 'Node.js, Express.js, MongoDB, React, Redux-Saga, Material UI',
     url: 'https://fakedata.rk-projects.dev/',
-    githubUrl: 'https://github.com/ruslan4k/fake-data-generator',
+    githubUrl: 'https://github.com/4ruslan-k/fake-data-generator',
   },
   {
     image: 'image-4',
@@ -57,7 +55,7 @@ const projects = [
     thumbnail: personalWebsiteImg,
     description: '',
     technologies: 'React.js, Bootstrap, Cloud Functions, GitHub actions',
-    githubUrl: 'https://github.com/ruslan4k/personal-website',
+    githubUrl: 'https://github.com/4ruslan-k/personal-website',
   },
   {
     image: 'image-2',
